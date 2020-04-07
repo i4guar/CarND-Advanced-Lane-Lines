@@ -158,7 +158,7 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-For very curved lanes and lanes which are harder to detect and tolerating smaller thersholds, this algorithm has a hard time. I could be improved by using the history of the lane lines detected and by spending more time adjusting the thresholds to be more robust.
+For very curved lanes and lanes which are harder to detect and tolerating smaller thersholds, this algorithm has a hard time. It could be improved by using the history of the lane lines detected and by spending more time adjusting the thresholds to be more robust.
 My lane is still a little jittery, which could be improved by averaging the history of the detected lane lines.
 
 Starting with the simple approach using sliding windows my result was suprisingly good. However, after using the polynomial and search around the previously detected line, my result got worse, so I returned to my original solution. I probably did not spend enough time adjusting my whole pipeline to be optimized to search around the fitted polynomial, so my algorithm did not improve by using my previous detected line.
